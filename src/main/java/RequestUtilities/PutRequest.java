@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Utilities;
+package RequestUtilities;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,14 +13,11 @@ import java.util.List;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 /**
  * @author vamsiravi
  *
  */
-public class GetRequest {
+public class PutRequest {
 	
 	public final static String USER_AGENT = "Mozilla/5.0";
 
@@ -28,7 +25,7 @@ public class GetRequest {
 		
 		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 		
-		connection.setRequestMethod("GET");
+		connection.setRequestMethod("PUT");
 		connection.setRequestProperty("User-Agent", USER_AGENT);
 		
 //		int responseCode = connection.getResponseCode();

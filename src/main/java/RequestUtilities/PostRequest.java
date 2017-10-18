@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Utilities;
+package RequestUtilities;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import org.json.JSONObject;
  * @author vamsiravi
  *
  */
-public class PutRequest {
+public class PostRequest {
 	
 	public final static String USER_AGENT = "Mozilla/5.0";
 
@@ -25,7 +25,7 @@ public class PutRequest {
 		
 		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 		
-		connection.setRequestMethod("PUT");
+		connection.setRequestMethod("POST");
 		connection.setRequestProperty("User-Agent", USER_AGENT);
 		
 //		int responseCode = connection.getResponseCode();

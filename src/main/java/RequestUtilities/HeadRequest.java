@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Utilities;
+package RequestUtilities;
 
 /**
  * @author vamsiravi

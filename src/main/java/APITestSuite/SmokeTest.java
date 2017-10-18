@@ -3,6 +3,10 @@
  */
 package APITestSuite;
 
+import java.io.IOException;
+
+import org.json.JSONException;
+
 import SmokeSuite.GetGuests;
 
 /**
@@ -11,8 +15,8 @@ import SmokeSuite.GetGuests;
  */
 public class SmokeTest {
 	GetGuests getGuests = new GetGuests();
-	public void runSmokeTests(){
-		
+	public void runSmokeTests() throws IOException, JSONException{
+		getGuests.simpleGetRequest();
 	}
 
 }
